@@ -1,0 +1,54 @@
+library(readxl)
+Pasta1 <- read_excel("Pasta1.xlsx")
+
+df <- subset(Pasta1, select=c(eleitorado_2012,Gariba2012,enchente))
+
+summary(df)
+
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+b5 <- Pasta1 %>% 
+  dplyr::select(Bairro, enchente) %>% 
+  arrange(enchente)
+b5 %>%
+  kbl(caption = "Legenda: 1 afetado, 0 não afetado") %>%
+  kable_classic(full_width = F, html_font = "Garamond")
+
+Pasta1$enchente_ <- as.factor(df$enchente)
+
+by(df$Gariba2012, df$enchente, mean)
+g <- ggplot(Pasta1, aes(Gariba2012, enchente_))
+g + geom_boxplot() +  xlab("Bairro Atingido por Enchente") +
+  ylab("% votos válidos Gariba 2012") + 
+  labs(caption = "TSE + reportagens/relatos da epóca") + coord_flip()
+
+
+cor.test(df$Gariba2012, df$enchente)
+library(polycor)
+polyserial(df$Gariba2012, df$enchente)
+
+#não sig
+
+
+library (statsr)
+
+inference(y = Gariba2012, x = enchente_, data = Pasta1, statistic = "mean", type = "ht",
+          null = 0, 
+          alternative = "twosided", method = "theoretical")
+
+
+# modelos - nem com eleitorado
+modelo <- lm(Gariba2012 ~ enchente_, data=Pasta1)
+summary(modelo)
+modelo_full <- lm(Gariba2012 ~ enchente_ + eleitorado_2012, data=Pasta1)
+summary(modelo_full)
+# nenhum modelo é estatísticamente bom
+
+
+
+cor.test(df$Gariba2012, df$eleitorado_2012)
+cor.test(df$enchente, df$eleitorado_2012)
+# não tem relação também
+
