@@ -9,3 +9,5 @@ em codig2.R investigo a votação de Hobus em 2008  e o renda segundo o censo 20
 
 
 as conclusões e analises constam nos próprios scripts (codig e codig2)
+
+os dois arquivos de imagem [ench_rend] e [hob08_ench] mostram conclusões preliminares e fragéis até aqui (10/06/2022)
