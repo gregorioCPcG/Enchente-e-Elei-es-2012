@@ -1,4 +1,6 @@
 # Enchente-e-Elei-es-2012
+A importância de entender essa eleição é por que ela foi a única em que a coalização liderada/apoiada por Hobus foi derrotada na cidade.
+
 Veja o arquivo de codigos para entender a proposta - ...
 
 
