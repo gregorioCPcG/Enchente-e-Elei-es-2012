@@ -10,7 +10,7 @@
 # é isso que vamos veriricar
 
 # dois são os limitadores :
-# os dados (apenas TSE para votos) e enchente - binário - sim(1) ou não(2)
+# os dados (apenas TSE para votos) e enchente - binário - sim(1) ou não(0)
 
 # logo, o uso de dados por rua, ou uma medida mais exata da enchente 
 
