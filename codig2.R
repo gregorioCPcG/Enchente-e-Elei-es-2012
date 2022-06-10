@@ -418,6 +418,21 @@ df$renda_simulada <- df$f
 df$Bairro <- as.factor(df$Bairro)
 df <- subset(df, select=c(Bairro, Gariba2012, Hobus2008, renda_simulada, enchente))
 
+library(ggplot2)
+
+H1 <- ggplot(df, aes(Hobus2008, Gariba2012, color=enchente))
+H1 + geom_point() + ggtitle("Gariba2012 por Hobus2008 + enchente,
+                            dados simulados")
+
+# não há uma relação visível
+
+H2 <- ggplot(df, aes(renda_simulada, Gariba2012, color=enchente))
+H2 + geom_point() + ggtitle("Gariba2012 por renda familiar 2010 + enchente,
+                            dados simulados")
+
+# a enchente binária parece ter relação com renda, mas não com a votação em Gariba
+
+# 
 
 # correlações
 require(corrplot)
