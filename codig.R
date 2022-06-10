@@ -5,7 +5,7 @@
 # já Hobus foi alvo de críticas por sua ação à epóca, o que o motivou a mudar sua imagem se inserindo na defesa civil estadual poucos anos depois.
 
 # dizia-se à epóca que Gariba foi beneficiado pela destacada atuaçção na enchente de 2011
-# do opositor, apoiado pelo prefeito Hobus, esperava-se o oposto.
+# Do concorrrente(jorge teixeira), apoiado pelo prefeito Hobus, esperava-se o oposto.
 
 # é isso que vamos veriricar
 
