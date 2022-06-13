@@ -17,4 +17,9 @@ Em codig3 - nos restringimos a 15 bairros que representam um total de 89,25% do 
 
 Em codig 4 - tento interagir renda com atingimento enchente.
 
+
+Em codig 5 - interajo Hobus 2008 (quartis) e enchente
+
 os arquivos de imagem [ench_rend], [hob08_ench]  e [jailson.png]sintetizam conclusões preliminares e fragéis até aqui (10/06/2022)
+
+O arquvio [ApresentandoCodig5.pdf] traz interessantes apontamentos e hipóteses.
