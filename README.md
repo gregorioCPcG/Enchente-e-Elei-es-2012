@@ -25,3 +25,4 @@ Em codig 6 - interajo Jailson 2004 (quartis) e enchente
 os arquivos de imagem [ench_rend], [hob08_ench]  e [jailson.png]sintetizam conclusões preliminares e fragéis até aqui (10/06/2022)
 
 O arquvio [ApresentandoCodig5.pdf] traz interessantes apontamentos e hipóteses.
+O arquivo [sobre codig 6] traz outros apontamentos.
